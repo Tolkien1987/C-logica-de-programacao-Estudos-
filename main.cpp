@@ -3,8 +3,12 @@ using namespace std;
 
 int main() {
   
-  bool verdadeiro = 12 < 13 || 10 <= 9;
-  cout << "verdadeiro = " << verdadeiro << endl;
+  int myAge = 20;
+  int mySisterAgo = 33;
+
+  if (myAge <= mySisterAgo) { 
+    cout << "I am younger" << endl;
+  }
   
 	return 0;
 } 
