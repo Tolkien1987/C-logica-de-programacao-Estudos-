@@ -1,18 +1,10 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-  int age;
-  float average;
   
-  cout << "Digite a sua idade: ";
-  cin >> age;
-  cout << "Digite sua média:" ;
-  cin >> average;
-
-  cout << "Sua idade é = " << age << endl;
-  cout << " e a média é de = " << average << " anos" << endl;
+  bool verdadeiro = 12 < 13 || 10 <= 9;
+  cout << "verdadeiro = " << verdadeiro << endl;
   
 	return 0;
 } 
