@@ -5,9 +5,12 @@ using namespace std;
 
 int main() {
   
-  for (int i = 2; i <= 100; i+=2) {   
-      cout << i << endl;
-    }
-    
+  int i = 2;
+
+  while ( i <= 100) {
+    cout << i << endl;
+    i += 2;
+  }
+
 	return 0;
 } 
