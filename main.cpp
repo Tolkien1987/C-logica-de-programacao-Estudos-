@@ -1,32 +1,16 @@
 #include <iostream>
 using namespace std;
 
-//Faça um programa que leia 5 valores int, e mostre quais são pares
+//Faça um programa que mostre pares entre 1...100
 
 int main() {
-
-  int a, b, c, d, e;
-  int qtd = 0;
-
-  cin >> a >> b >> c >> d >> e;
-
-  if (a % 2 == 0) {
-    qtd++;
-  }
-  if (b % 2 == 0) {
-    qtd++;
-  }
-  if (c % 2 == 0) {
-    qtd++;
-  }
-  if (d % 2 == 0) {
-    qtd++;
-  }
-  if (e % 2 == 0) {
-    qtd++;
+  
+  for (int i = 1; i <= 100; i++) {
+    if (i % 2 == 0) {
+      cout << i << endl;
+    }
   }
 
-  cout << qtd << " valor(s) pares" << endl;
 
 	return 0;
 } 
