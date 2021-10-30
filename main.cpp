@@ -2,6 +2,8 @@
 #include <iomanip>
 using namespace std;
 
+//Lista pessoal de exercícios com C++
+
 void printValue(float newIncome, float readjustment, int percent) {
   cout << fixed << setprecision(2);
   cout << "New income " << newIncome << endl;
