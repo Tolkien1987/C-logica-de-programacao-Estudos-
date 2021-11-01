@@ -2,7 +2,7 @@
 #include <iomanip>
 using namespace std;
 
-//Lista pessoal de exercícios com C++
+//Lista pessoal de exercícios com C++ 
 
 void printValue(float newIncome, float readjustment, int percent) {
   cout << fixed << setprecision(2);
@@ -35,16 +35,6 @@ int main() {
 
 
 
-
-
-
-
-
-
-
-
-
-
 // - - - - - - //
 
 // int main() {
@@ -63,6 +53,10 @@ int main() {
 
 
 // - - - - - - - - //
+
+
+
+
 
 // #include <iostream>
 // using namespace std;
@@ -104,7 +98,9 @@ int main() {
 // } 
 
 
+
 // - - - - - - //
+
 
 
 // #include <iostream>
@@ -147,7 +143,9 @@ int main() {
 // }  
 
 
+
 // - - - - - //
+
 
 
 // int main() {
@@ -165,6 +163,9 @@ int main() {
 
 
 // - - - -  //
+
+
+
 
 // int main() {
 
