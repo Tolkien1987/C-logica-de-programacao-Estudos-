@@ -7,7 +7,13 @@ Repositório de coleção/atualização de estudos feitos no replit da udemy, ao
 
 _ _ _ _ _ _ _ _ _ _
 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/GH1G51W/stroustrup-500.png" alt="stroustrup-500" border="0"></a>
+
+Bjarne Stroustrup, the designer and original implementor of C++
+
 C++ is a cross-platform language that can be used to create high-performance applications. C++ was developed by Bjarne Stroustrup, as an extension to the C language. C++ gives programmers a high level of control over system resources and memory.
+
+https://www.cplusplus.com/
 
 
 
