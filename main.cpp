@@ -1,26 +1,63 @@
 //_ _ _ Exercises C++ _ _ _ //
-// 001 - General approach
 
-#include <bits/stdc++.h> // biblioteca universal
+#include <bits/stdc++.h>
 using namespace std;
 
 
 int main() {
   
-  int age = 10;
-  double income = 25.700, height = 1.75;
-  char gender = 'F';
-  string name = "Paty";
+  int income1, income2;
+  string name1, name2;
+  int age;
+  char gender;
 
-  cout << fixed << setprecision(2);
-  cout << "Age = " << age << endl;
-  cout << "Income = " << income << endl;
-  cout << "Height = " << height << endl;
-  cout << "Gender = " << gender << endl;
-  cout << "Name = " << name << endl;
+  cout << "Name of the first person: ";
+  getline(cin,name1);
+  cout << "Income of the first person: ";
+  cin >> income1;
+  
+  cout << "Name of the second person: ";
+  cin.ignore(INT_MAX, '\n');
+  getline(cin,name2);
+  cout << "Income of the second person: ";
+  cin >> income2;
+
+  cout << "Type your age: ";
+  cin >> age;
+  cout << "Type your gender (F/M): ";
+  cin >> gender;
 
 	return 0;
-} 
+}
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+//_ _ _ _General approach_ _ _ //
+
+// #include <bits/stdc++.h> // biblioteca universal
+// using namespace std;
+
+
+// int main() {
+  
+//   int age = 10;
+//   double income = 25.700, height = 1.75;
+//   char gender = 'F';
+//   string name = "Paty";
+
+//   cout << fixed << setprecision(2);
+//   cout << "Age = " << age << endl;
+//   cout << "Income = " << income << endl;
+//   cout << "Height = " << height << endl;
+//   cout << "Gender = " << gender << endl;
+//   cout << "Name = " << name << endl;
+
+// 	return 0;
+// } 
 
 
 
