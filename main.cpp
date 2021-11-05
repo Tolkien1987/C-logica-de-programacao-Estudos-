@@ -27,6 +27,14 @@ int main() {
   cout << "Type your gender (F/M): ";
   cin >> gender;
 
+  cout << fixed << setprecision(2);
+  cout << "Name 1 = " << name1 << endl; 
+  cout << "Income 1 = " << income1 << endl; 
+  cout << "Name 2 = " << name2 << endl; 
+  cout << "Income 2 = " << income2 << endl; 
+  cout << "Age:  " << age << endl;
+  cout << "Gender: " << gender << endl;
+
 	return 0;
 }
 
