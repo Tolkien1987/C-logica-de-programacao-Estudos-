@@ -1,5 +1,5 @@
 
-# Estudos de lógica de programação e algoritimos
+# Estudos de lógica de programação e algoritmos
 
 <a href="https://ibb.co/cT4vgHP"><img src="https://i.ibb.co/881BKpJ/title-Shadow-1024x341.png" alt="title-Shadow-1024x341" border="0"></a>
 
