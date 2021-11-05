@@ -1,19 +1,30 @@
-#include <iostream>
-#include <iomanip>
+//_ _ _ Exercises C++ _ _ _ //
+// 001 - General approach
+
+#include <bits/stdc++.h> // biblioteca universal
 using namespace std;
 
 
 int main() {
   
+  int age = 10;
+  double income = 25.700, height = 1.75;
+  char gender = 'F';
+  string name = "Paty";
 
-
+  cout << fixed << setprecision(2);
+  cout << "Age = " << age << endl;
+  cout << "Income = " << income << endl;
+  cout << "Height = " << height << endl;
+  cout << "Gender = " << gender << endl;
+  cout << "Name = " << name << endl;
 
 	return 0;
 } 
 
 
 
-// _ _ _ _ _ _ _ //
+// _ _ _ other exercises_ _ _ _ //
 
 
 
