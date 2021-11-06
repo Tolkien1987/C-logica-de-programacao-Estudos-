@@ -1,32 +1,69 @@
 //_ _ _ Exercises C++ _ _ _ //
 
-// 002 - Problema "idades"
-// Fazer um programa para ler o nome e idade de duas pessoas. Ao final mostrar uma mensagem com os nomes e a idade média entre essas pessoas, com uma casa decimal, conforme exemplo.
+// 003 - Problema "menor_de_tres"
+// Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três números lidos. Em caso de empate, mostrar apenas uma vez.
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
   
-  string name1, name2;
-  int age1, age2;
-  double average;
+  int a, b , c, lower;
 
-  cout << "Please, type the first name: " << endl;
-  getline(cin, name1); // ler até a quebra de linha
-  cout << "Please, type the second name: " << endl;
-  getline(cin, name2);
-  cout << "Please, type the first age: " << endl;
-  cin >> age1;
-  cout << "Please, type the second age: " << endl;
-  cin >> age2;
+  cout << "Please, type the 1st number" << endl;
+  cin >> a;
+  cout << "Please, type the 2st number" << endl;
+  cin >> b;
+  cout << "Please, type the 3st number" << endl;
+  cin >> c;
 
-  average = (double)(age1 + age2) / 2;
-  cout << "The average age is " << average << endl;
-  
+  if (a < b && a < c) { 
+    lower = a;
+  } else if (b < c) {
+    lower = b;
+  } else {
+    lower = c;
+  }
+  cout << "The lower number is " << lower << endl;
 
 	return 0;
 }
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+
+// 002 - Problema "idades"
+// Fazer um programa para ler o nome e idade de duas pessoas. Ao final mostrar uma mensagem com os nomes e a idade média entre essas pessoas, com uma casa decimal, conforme exemplo.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+  
+//   string name1, name2;
+//   int age1, age2;
+//   double average;
+
+//   cout << "Please, type the first name: " << endl;
+//   getline(cin, name1); // ler até a quebra de linha
+//   cout << "Please, type the second name: " << endl;
+//   getline(cin, name2);
+//   cout << "Please, type the first age: " << endl;
+//   cin >> age1;
+//   cout << "Please, type the second age: " << endl;
+//   cin >> age2;
+
+//   average = (double)(age1 + age2) / 2;
+//   cout << "The average age is " << average << endl;
+  
+
+// 	return 0;
+// }
 
 
 
