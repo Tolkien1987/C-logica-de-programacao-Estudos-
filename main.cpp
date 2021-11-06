@@ -1,33 +1,84 @@
 //_ _ _ Exercises C++ _ _ _ //
 
-// 005 - Problema "soma_impares" (adaptado de URI 1071)
-// Leia 2 valores inteiros X e Y (em qualquer ordem). A seguir, calcule e mostre a soma dos números impares entre eles.
+// 006 - Problema "diagonal_negativos"
+// Fazer um programa para ler um número inteiro N (máximo = 10) e uma matriz quadrada de ordem N contendo números inteiros. Em seguida, mostrar a diagonal principal e a quantidade de valores negativos da matriz.
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-  
-  int x, y, change, sum;
 
-  cout << "Type two numbers: " << endl;
-  cin >> x >> y;
-  
-  if (x > y) {
-    change = x;
-    x = y;
-    y = change;
-  }
+  int N, counter;
 
-  for (int i = x+1; i < y; i++) {
-    if (i % 2 != 0) {
-      sum = sum + i;
+  cout << "What is the order ?";
+  cin >> N;
+
+  int mat [N][N];
+
+  for (int i = 0; i < N; i++) {
+    for (int j = 0; j < N; j++) {
+      cout << "Element ["<< i << "," << j << "]: ";
+      cin >> mat[i][j];
     }
   }
-  cout << "Sum is = " << sum << endl;
+
+  cout << "Diagonal: " << endl;
+
+  for (int i = 0; i < N; i++) {
+    cout << mat [i] [i] << " ";
+  }
+  cout << endl;
+
+  counter = 0;
+
+  for (int i = 0; i < N; i++) {
+    for (int j = 0; j < N; j++) {
+      if (mat[i][j] < 0) {
+        counter++;
+      }
+    }
+  }
+  cout << "Qty of negative = " << counter << endl;
 
 	return 0;
 }
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+
+// 005 - Problema "soma_impares" (adaptado de URI 1071)
+// Leia 2 valores inteiros X e Y (em qualquer ordem). A seguir, calcule e mostre a soma dos números impares entre eles.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+  
+//   int x, y, change, sum;
+
+//   cout << "Type two numbers: " << endl;
+//   cin >> x >> y;
+  
+//   if (x > y) {
+//     change = x;
+//     x = y;
+//     y = change;
+//   }
+
+//   for (int i = x+1; i < y; i++) {
+//     if (i % 2 != 0) {
+//       sum = sum + i;
+//     }
+//   }
+//   cout << "Sum is = " << sum << endl;
+
+// 	return 0;
+// }
 
 
 
