@@ -1,32 +1,67 @@
 //_ _ _ Exercises C++ _ _ _ //
 
-// 001 - Problema "retangulo"
-// Fazer um programa para ler as medidas da base e altura de um retângulo. Em seguida, mostrar o valor da área, perímetro e diagonal deste retângulo, com quatro casas decimais, conforme exemplos.
+// 002 - Problema "idades"
+// Fazer um programa para ler o nome e idade de duas pessoas. Ao final mostrar uma mensagem com os nomes e a idade média entre essas pessoas, com uma casa decimal, conforme exemplo.
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
   
-  double base, height, area, perimeter, diagonal;
+  string name1, name2;
+  int age1, age2;
+  double average;
 
-  cout << "Type the base value: ";
-  cin >> base;
-  cout << "type the height value: ";
-  cin >> height;
+  cout << "Please, type the first name: " << endl;
+  getline(cin, name1); // ler até a quebra de linha
+  cout << "Please, type the second name: " << endl;
+  getline(cin, name2);
+  cout << "Please, type the first age: " << endl;
+  cin >> age1;
+  cout << "Please, type the second age: " << endl;
+  cin >> age2;
 
-  area = base * height;
-  perimeter = 2 * (base + height);
-  diagonal = sqrt(pow(base, 2.0) + pow(height, 2.0)); //altura ao quadrado
-
-  cout << fixed << setprecision(4);
-  cout << "Area = " << area << endl;
-  cout << "Perimeter = " << perimeter << endl;
-  cout << "Diagonal = " << diagonal << endl;
+  average = (double)(age1 + age2) / 2;
+  cout << "The average age is " << average << endl;
   
 
 	return 0;
 }
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+// 001 - Problema "retangulo"
+// Fazer um programa para ler as medidas da base e altura de um retângulo. Em seguida, mostrar o valor da área, perímetro e diagonal deste retângulo, com quatro casas decimais, conforme exemplos.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+  
+//   double base, height, area, perimeter, diagonal;
+
+//   cout << "Type the base value: ";
+//   cin >> base;
+//   cout << "type the height value: ";
+//   cin >> height;
+
+//   area = base * height;
+//   perimeter = 2 * (base + height);
+//   diagonal = sqrt(pow(base, 2.0) + pow(height, 2.0)); //altura ao quadrado
+
+//   cout << fixed << setprecision(4);
+//   cout << "Area = " << area << endl;
+//   cout << "Perimeter = " << perimeter << endl;
+//   cout << "Diagonal = " << diagonal << endl;
+  
+
+// 	return 0;
+// }
 
 
 
