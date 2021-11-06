@@ -6,9 +6,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int main() {
   
+  double base, height, area, perimeter, diagonal;
+
+  cout << "Type the base value: ";
+  cin >> base;
+  cout << "type the height value: ";
+  cin >> height;
+
+  area = base * height;
+  perimeter = 2 * (base + height);
+  diagonal = sqrt(pow(base, 2.0) + pow(height, 2.0)); //altura ao quadrado
+
+  cout << fixed << setprecision(4);
+  cout << "Area = " << area << endl;
+  cout << "Perimeter = " << perimeter << endl;
+  cout << "Diagonal = " << diagonal << endl;
   
 
 	return 0;
