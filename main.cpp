@@ -1,46 +1,69 @@
 //_ _ _ Exercises C++ _ _ _ //
 
+// 001 - Problema "retangulo"
+// Fazer um programa para ler as medidas da base e altura de um retângulo. Em seguida, mostrar o valor da área, perímetro e diagonal deste retângulo, com quatro casas decimais, conforme exemplos.
+
 #include <bits/stdc++.h>
 using namespace std;
 
 
 int main() {
   
-  int income1, income2;
-  string name1, name2;
-  int age;
-  char gender;
-
-  cout << "Name of the first person: ";
-  getline(cin,name1);
-  cout << "Income of the first person: ";
-  cin >> income1;
   
-  cout << "Name of the second person: ";
-  cin.ignore(INT_MAX, '\n');
-  getline(cin,name2);
-  cout << "Income of the second person: ";
-  cin >> income2;
-
-  cout << "Type your age: ";
-  cin >> age;
-  cout << "Type your gender (F/M): ";
-  cin >> gender;
-
-  cout << fixed << setprecision(2);
-  cout << "Name 1 = " << name1 << endl; 
-  cout << "Income 1 = " << income1 << endl; 
-  cout << "Name 2 = " << name2 << endl; 
-  cout << "Income 2 = " << income2 << endl; 
-  cout << "Age:  " << age << endl;
-  cout << "Gender: " << gender << endl;
 
 	return 0;
 }
 
 
 
+
 // _ _ _ _ _ _ //
+
+
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+
+// int main() {
+  
+//   int income1, income2;
+//   string name1, name2;
+//   int age;
+//   char gender;
+
+//   cout << "Name of the first person: ";
+//   getline(cin,name1);
+//   cout << "Income of the first person: ";
+//   cin >> income1;
+  
+//   cout << "Name of the second person: ";
+//   cin.ignore(INT_MAX, '\n');
+//   getline(cin,name2);
+//   cout << "Income of the second person: ";
+//   cin >> income2;
+
+//   cout << "Type your age: ";
+//   cin >> age;
+//   cout << "Type your gender (F/M): ";
+//   cin >> gender;
+
+//   cout << fixed << setprecision(2);
+//   cout << "Name 1 = " << name1 << endl; 
+//   cout << "Income 1 = " << income1 << endl; 
+//   cout << "Name 2 = " << name2 << endl; 
+//   cout << "Income 2 = " << income2 << endl; 
+//   cout << "Age:  " << age << endl;
+//   cout << "Gender: " << gender << endl;
+
+// 	return 0;
+// }
+
+
+
+// // _ _ _ _ _ _ //
 
 
 
