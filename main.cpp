@@ -1,33 +1,102 @@
 //_ _ _ Exercises C++ _ _ _ //
 
-// 003 - Problema "menor_de_tres"
-// Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três números lidos. Em caso de empate, mostrar apenas uma vez.
+// 005 - Problema "soma_impares" (adaptado de URI 1071)
+// Leia 2 valores inteiros X e Y (em qualquer ordem). A seguir, calcule e mostre a soma dos números impares entre eles.
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
   
-  int a, b , c, lower;
+  int x, y, change, sum;
 
-  cout << "Please, type the 1st number" << endl;
-  cin >> a;
-  cout << "Please, type the 2st number" << endl;
-  cin >> b;
-  cout << "Please, type the 3st number" << endl;
-  cin >> c;
-
-  if (a < b && a < c) { 
-    lower = a;
-  } else if (b < c) {
-    lower = b;
-  } else {
-    lower = c;
+  cout << "Type two numbers: " << endl;
+  cin >> x >> y;
+  
+  if (x > y) {
+    change = x;
+    x = y;
+    y = change;
   }
-  cout << "The lower number is " << lower << endl;
+
+  for (int i = x+1; i < y; i++) {
+    if (i % 2 != 0) {
+      sum = sum + i;
+    }
+  }
+  cout << "Sum is = " << sum << endl;
 
 	return 0;
 }
+
+
+
+
+// _ _ _ _ _ _ //
+
+// 004 - Problema "crescente" (adaptado de URI 1113)
+// Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva para cada X e Y uma mensagem que indique se estes valores foram digitados em ordem crescente ou decrescente. O programa deve finalizar quando forem digitados dois valores iguais.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+  
+//   int x, y;
+
+//   cout << "Type two numbers: " << endl;
+//   cin >> x >> y;
+
+//   while (x != y) {
+//     if (x < y) {
+//       cout << "Increase" << endl;
+//     }
+//     else {
+//       cout << "Decrease" << endl;
+//     }
+//     cout << "Type other two number: " << endl;
+//     cin >> x >> y;
+//   }
+
+// 	return 0;
+// }
+
+
+
+
+// _ _ _ _ _ _ //
+
+
+
+
+// 003 - Problema "menor_de_tres"
+// Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três números lidos. Em caso de empate, mostrar apenas uma vez.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+  
+//   int a, b , c, lower;
+
+//   cout << "Please, type the 1st number" << endl;
+//   cin >> a;
+//   cout << "Please, type the 2st number" << endl;
+//   cin >> b;
+//   cout << "Please, type the 3st number" << endl;
+//   cin >> c;
+
+//   if (a < b && a < c) { 
+//     lower = a;
+//   } else if (b < c) {
+//     lower = b;
+//   } else {
+//     lower = c;
+//   }
+//   cout << "The lower number is " << lower << endl;
+
+// 	return 0;
+// }
 
 
 
